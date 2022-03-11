@@ -1,0 +1,6 @@
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/CPP.dir
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/CMakeLists.dir
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Administrator/Desktop/CPP/cmake-build-debug/CMakeFiles/_1.dir
