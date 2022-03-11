@@ -3,6 +3,10 @@
 
 int main() {
     using namespace std;
-    Solutions::intTobinaries(10);
+    for(int i=0; i<10; i++){
+        cout<<"i="<<i<<" ";
+        cout<<Solutions::intTobinaries(i)<<endl;
+    }
+
     return 0;
 }

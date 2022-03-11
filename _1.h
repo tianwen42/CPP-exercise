@@ -7,32 +7,30 @@
 #define CPP__1_H
 
 #include <vector>
-#include<sstream>
 
 using namespace std;
 #endif //CPP__1_H
 
 class Solutions {
 public:
-    static void intTobinaries(int n) {
+    static int intTobinaries(int n) {
         vector<int> stack;
         while (n) {
             // cout<<n%2<<endl;
             stack.push_back(n % 2);
             n = n / 2;
+        }
+        int res = 0;
+        //pop_back
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            res = res * 10 + stack[i];
+            stack.pop_back();
+            // stringstream stream;
+            // stream<<stack[i];  //n为int类型
+            // res+=stream.str();
 
         }
-        string res="";
-        for (int i =stack.size()-1; i>=0 ; i--) {
-            // stack.pop_back();
-            stringstream stream;
-            stream<<stack[i];  //n为int类型
-            res+=stream.str();
-            cout << res << endl;
-        }
-        for (int i =0; i<stack.size(); i++) {
-            cout << "stack"<<stack[i] << endl;
-        }
+        return res;
 
     }
 };
