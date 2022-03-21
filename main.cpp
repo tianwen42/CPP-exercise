@@ -1,12 +1,11 @@
 #include <iostream>
-#include "_1.h"
+#include <string>
+#include<cstring>
+#include"_6.h"
+
+using namespace std;
 
 int main() {
-    using namespace std;
-    for(int i=0; i<10; i++){
-        cout<<"i="<<i<<" ";
-        cout<<Solutions::intTobinaries(i)<<endl;
-    }
-
+    CalPolygonArea();
     return 0;
 }

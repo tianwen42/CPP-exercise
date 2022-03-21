@@ -1,0 +1,8 @@
+"D:\Program Files\CLion_2021.1.2_Protable\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Administrator\Desktop\CPP
+-- Configuring done
+CMake Error: Cannot determine link language for target "CMakeLists".
+CMake Error: CMake can not determine linker language for target: CMakeLists
+CMake Error: Cannot determine link language for target "_1".
+CMake Error: CMake can not determine linker language for target: _1
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.

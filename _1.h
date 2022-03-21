@@ -1,36 +1,31 @@
 //
-// Project:CPP
-// Created by Yanglin on 2022/3/9 10:02.
+// Created by Administrator on 2022/2/28.
 //
 
 #ifndef CPP__1_H
 #define CPP__1_H
 
-#include <vector>
-
-using namespace std;
 #endif //CPP__1_H
 
-class Solutions {
+
+class Solution {
 public:
-    static int intTobinaries(int n) {
-        vector<int> stack;
-        while (n) {
-            // cout<<n%2<<endl;
-            stack.push_back(n % 2);
-            n = n / 2;
+    int digitalSection(int x) {
+        //数字按逆序遍历
+        using namespace std;
+        cout << x << endl;
+        while (x != 0) {
+            cout << "x%10取最末位: " << x % 10 << "  ";
+            cout << "x/10去除末位: " << x / 10 << endl;
+            // cout<<ans<<endl;
+            x /= 10;
         }
-        int res = 0;
-        //pop_back
-        for (int i = stack.size() - 1; i >= 0; i--) {
-            res = res * 10 + stack[i];
-            stack.pop_back();
-            // stringstream stream;
-            // stream<<stack[i];  //n涓篿nt绫诲瀷
-            // res+=stream.str();
-
-        }
-        return res;
-
+        return 0;
     }
 };
+
+// 105
+// x%10取最末位: 5  x/10去除末位: 10
+// x%10取最末位: 0  x/10去除末位: 1
+// x%10取最末位: 1  x/10去除末位: 0
+
