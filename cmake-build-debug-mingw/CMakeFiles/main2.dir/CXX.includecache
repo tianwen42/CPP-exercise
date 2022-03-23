@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Administrator/Desktop/CPP/_9.h
+D:/Github/CPP/_9.h
 vector
 -
+stack
+-
 
-C:/Users/Administrator/Desktop/CPP/main2.cpp
+D:/Github/CPP/main2.cpp
 iostream
 -
 _9.h
-C:/Users/Administrator/Desktop/CPP/_9.h
+D:/Github/CPP/_9.h
 

@@ -66,10 +66,10 @@ RM = "D:\Program Files\CLion_2021.1.2_Protable\bin\cmake\win\bin\cmake.exe" -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Administrator\Desktop\CPP
+CMAKE_SOURCE_DIR = D:\Github\CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw
+CMAKE_BINARY_DIR = D:\Github\CPP\cmake-build-debug-mingw
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw\CMakeFiles C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\CPP\cmake-build-debug-mingw\CMakeFiles D:\Github\CPP\cmake-build-debug-mingw\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\CPP\cmake-build-debug-mingw\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

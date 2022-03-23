@@ -61,10 +61,10 @@ RM = "D:\Program Files\CLion_2021.1.2_Protable\bin\cmake\win\bin\cmake.exe" -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Administrator\Desktop\CPP
+CMAKE_SOURCE_DIR = D:\Github\CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw
+CMAKE_BINARY_DIR = D:\Github\CPP\cmake-build-debug-mingw
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CMakeLists.dir/depend.make
@@ -80,6 +80,6 @@ CMakeFiles/CMakeLists.dir/clean:
 .PHONY : CMakeFiles/CMakeLists.dir/clean
 
 CMakeFiles/CMakeLists.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Administrator\Desktop\CPP C:\Users\Administrator\Desktop\CPP C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw C:\Users\Administrator\Desktop\CPP\cmake-build-debug-mingw\CMakeFiles\CMakeLists.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Github\CPP D:\Github\CPP D:\Github\CPP\cmake-build-debug-mingw D:\Github\CPP\cmake-build-debug-mingw D:\Github\CPP\cmake-build-debug-mingw\CMakeFiles\CMakeLists.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CMakeLists.dir/depend
 
