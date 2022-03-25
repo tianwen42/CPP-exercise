@@ -129,6 +129,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named leetcode
+
+# Build rule for target.
+leetcode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 leetcode
+.PHONY : leetcode
+
+# fast build rule for target.
+leetcode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/build
+.PHONY : leetcode/fast
+
+#=============================================================================
 # Target rules for targets named CPP
 
 # Build rule for target.
@@ -179,6 +192,33 @@ main2: cmake_check_build_system
 main2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/build
 .PHONY : main2/fast
+
+leetcode.obj: leetcode.cpp.obj
+
+.PHONY : leetcode.obj
+
+# target to build an object file
+leetcode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/leetcode.cpp.obj
+.PHONY : leetcode.cpp.obj
+
+leetcode.i: leetcode.cpp.i
+
+.PHONY : leetcode.i
+
+# target to preprocess a source file
+leetcode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/leetcode.cpp.i
+.PHONY : leetcode.cpp.i
+
+leetcode.s: leetcode.cpp.s
+
+.PHONY : leetcode.s
+
+# target to generate assembly for a file
+leetcode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/leetcode.cpp.s
+.PHONY : leetcode.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -247,8 +287,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... CMakeLists
 	@echo ... CPP
+	@echo ... leetcode
 	@echo ... main
 	@echo ... main2
+	@echo ... leetcode.obj
+	@echo ... leetcode.i
+	@echo ... leetcode.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -17,6 +17,48 @@
 					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="leetcode">
+				<Option output="D:/Github/CPP/cmake-build-debug-mingw/leetcode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Github/CPP/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 leetcode"/>
+					<CompileFile command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="leetcode/fast">
+				<Option output="D:/Github/CPP/cmake-build-debug-mingw/leetcode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Github/CPP/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 leetcode/fast"/>
+					<CompileFile command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="CPP">
 				<Option output="D:/Github/CPP/cmake-build-debug-mingw/CPP.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Github/CPP/cmake-build-debug-mingw"/>
@@ -206,11 +248,23 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Github/CPP/217_存在重复元素.h">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/7_整数反转.h">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/Github/CPP/CMakeLists.txt">
 			<Option target="CMakeLists"/>
 		</Unit>
 		<Unit filename="D:/Github/CPP/_1.h">
 			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/_数字对称翻转.h">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/leetcode.cpp">
+			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="D:/Github/CPP/main.cpp">
 			<Option target="CPP"/>
