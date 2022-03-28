@@ -251,6 +251,9 @@
 		<Unit filename="D:/Github/CPP/217_存在重复元素.h">
 			<Option target="CPP"/>
 		</Unit>
+		<Unit filename="D:/Github/CPP/704_二分查找.h">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/Github/CPP/7_整数反转.h">
 			<Option target="CPP"/>
 		</Unit>
@@ -258,6 +261,9 @@
 			<Option target="CMakeLists"/>
 		</Unit>
 		<Unit filename="D:/Github/CPP/_1.h">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/_11.h">
 			<Option target="CPP"/>
 		</Unit>
 		<Unit filename="D:/Github/CPP/_数字对称翻转.h">

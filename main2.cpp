@@ -1,12 +1,13 @@
 #include <iostream>
-#include "_åè½¬äºŒè¿›åˆ¶.h"
+#include "704_¶ş·Ö²éÕÒ.h"
+#include<vector>
+
 
 int main() {
     using namespace std;
-    for(int i=0; i<10; i++){
-        cout<<"i="<<i<<" ";
-        cout<<Solutions::intTobinaries(i)<<endl;
-    }
-
+    vector<int> vec={-1,0,2,5,9,10,11,12};
+    int target=9;
+    Solution example = Solution();
+    cout<<example.search(vec,target) << endl;
     return 0;
 }
