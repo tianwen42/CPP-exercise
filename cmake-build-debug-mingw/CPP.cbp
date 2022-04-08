@@ -247,6 +247,48 @@
 					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test">
+				<Option output="D:/Github/CPP/cmake-build-debug-mingw/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Github/CPP/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="D:/Github/CPP/cmake-build-debug-mingw/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Github/CPP/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/env/mingw64/bin/mingw32-make.exe -f &quot;D:/Github/CPP/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="D:/Github/CPP/217_存在重复元素.h">
 			<Option target="CPP"/>
@@ -278,6 +320,10 @@
 		</Unit>
 		<Unit filename="D:/Github/CPP/main2.cpp">
 			<Option target="main2"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/test.cpp">
+			<Option target="CPP"/>
+			<Option target="test"/>
 		</Unit>
 		<Unit filename="D:/Github/CPP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
