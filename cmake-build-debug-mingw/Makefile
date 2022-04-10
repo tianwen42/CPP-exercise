@@ -290,6 +290,33 @@ main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main2.cpp.s
 .PHONY : main2.cpp.s
 
+ray-crossing.obj: ray-crossing.cpp.obj
+
+.PHONY : ray-crossing.obj
+
+# target to build an object file
+ray-crossing.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/ray-crossing.cpp.obj
+.PHONY : ray-crossing.cpp.obj
+
+ray-crossing.i: ray-crossing.cpp.i
+
+.PHONY : ray-crossing.i
+
+# target to preprocess a source file
+ray-crossing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/ray-crossing.cpp.i
+.PHONY : ray-crossing.cpp.i
+
+ray-crossing.s: ray-crossing.cpp.s
+
+.PHONY : ray-crossing.s
+
+# target to generate assembly for a file
+ray-crossing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/ray-crossing.cpp.s
+.PHONY : ray-crossing.cpp.s
+
 test.obj: test.cpp.obj
 
 .PHONY : test.obj
@@ -343,6 +370,9 @@ help:
 	@echo ... main2.obj
 	@echo ... main2.i
 	@echo ... main2.s
+	@echo ... ray-crossing.obj
+	@echo ... ray-crossing.i
+	@echo ... ray-crossing.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

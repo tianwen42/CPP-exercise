@@ -321,6 +321,9 @@
 		<Unit filename="D:/Github/CPP/main2.cpp">
 			<Option target="main2"/>
 		</Unit>
+		<Unit filename="D:/Github/CPP/ray-crossing.cpp">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/Github/CPP/test.cpp">
 			<Option target="CPP"/>
 			<Option target="test"/>
