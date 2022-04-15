@@ -311,6 +311,12 @@
 		<Unit filename="D:/Github/CPP/_数字对称翻转.h">
 			<Option target="CPP"/>
 		</Unit>
+		<Unit filename="D:/Github/CPP/dtw.cpp">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/Github/CPP/dtw.h">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/Github/CPP/leetcode.cpp">
 			<Option target="leetcode"/>
 		</Unit>

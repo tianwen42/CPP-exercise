@@ -206,6 +206,33 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+dtw.obj: dtw.cpp.obj
+
+.PHONY : dtw.obj
+
+# target to build an object file
+dtw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/dtw.cpp.obj
+.PHONY : dtw.cpp.obj
+
+dtw.i: dtw.cpp.i
+
+.PHONY : dtw.i
+
+# target to preprocess a source file
+dtw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/dtw.cpp.i
+.PHONY : dtw.cpp.i
+
+dtw.s: dtw.cpp.s
+
+.PHONY : dtw.s
+
+# target to generate assembly for a file
+dtw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/dtw.cpp.s
+.PHONY : dtw.cpp.s
+
 leetcode.obj: leetcode.cpp.obj
 
 .PHONY : leetcode.obj
@@ -361,6 +388,9 @@ help:
 	@echo ... main
 	@echo ... main2
 	@echo ... test
+	@echo ... dtw.obj
+	@echo ... dtw.i
+	@echo ... dtw.s
 	@echo ... leetcode.obj
 	@echo ... leetcode.i
 	@echo ... leetcode.s

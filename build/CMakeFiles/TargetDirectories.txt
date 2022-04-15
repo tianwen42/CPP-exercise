@@ -1,6 +1,0 @@
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/CPP.dir
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/main.dir
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/CMakeLists.dir
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/_1.dir
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Administrator/Desktop/CPP/build/CMakeFiles/ZERO_CHECK.dir
