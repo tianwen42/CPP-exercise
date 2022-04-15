@@ -5,9 +5,12 @@
 
 int main() {
     using namespace std;
-    vector<int> vec={-1,0,2,5,9,10,11,12};
+    vector<int> nums={-1,0,2,5,9,10,11,12};
     int target=9;
     Solution example = Solution();
-    cout<<example.search(vec,target) << endl;
+    for(int i=0;i<nums.size();i++){
+        cout<<nums[i]<<" ";
+    }
+    // cout<<example.search(nums,target) << endl;
     return 0;
 }
