@@ -1,23 +1,20 @@
 #include <iostream>
-#include "_12.h"
+#include "isPowerOfTwo.h"
 #include<vector>
 
 using namespace std;
 
 int main() {
     using namespace std;
-    vector<int> vec={-1,0,2,5,9,10,11,12};
+    vector<int> testvec={-1,0,2,5,9,10,11,12};
     int target=9;
     Solution example = Solution();
-    for (auto val : vec){
-        cout<<val<<" ";
-    }
     cout<<endl;
-    example.reserve(vec);
+    cout<<example.isPowerOfTwo(4);
 
-    for (auto val : vec){
-        cout<<val<<" ";
-    }
+    // for (auto val : testvec){
+    //     cout<<val<<" ";
+    // }
     // cout <<"sas"<<endl;
     return 0;
 }
