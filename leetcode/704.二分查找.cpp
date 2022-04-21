@@ -1,16 +1,10 @@
-//
-// Created by YangLin on 2022/3/27.
-//
+/*
+ * @lc app=leetcode.cn id=704 lang=cpp
+ *
+ * [704] 二分查找
+ */
 
-#ifndef CPP_704_二分查找_H
-#define CPP_704_二分查找_H
-
-#include<iostream>
-#include<vector>
-
-using namespace std;
-#endif //CPP_704_二分查找_H
-
+// @lc code=start
 class Solution {
 public:
     // 定义target在左闭右开的区间里，即：[left, right]
@@ -28,7 +22,7 @@ public:
                 rear = mid - 1;
             }
         }
-        return 0;
+        return -1;
     }
 
     // 定义target在左闭右开的区间里，即：[left, right)
@@ -50,4 +44,5 @@ public:
     }
 
 };
+// @lc code=end
 

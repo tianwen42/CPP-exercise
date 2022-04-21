@@ -1,16 +1,10 @@
-//
-// Created by Administrator on 2022/3/3.
-//
+/*
+ * @lc app=leetcode.cn id=343 lang=cpp
+ *
+ * [343] 整数拆分
+ */
 
-#ifndef CPP__3_H
-#define CPP__3_H
-
-#include <vector>
-#include <iostream>
-
-using namespace std;
-#endif //CPP__3_H
-
+// @lc code=start
 class Solution {
 public:
     int integerBreak(int n) {
@@ -20,10 +14,12 @@ public:
 
         dp[2] = 1;
         for (int i = 3; i <= n; ++i) {
-            print(dp);
+            // print(dp);
             for (int j = 1; j < i; ++j)
                 dp[i] = max(dp[i], max(dp[i - j] * j, (i - j) * j));
         }
         return dp[n];
     }
 };
+// @lc code=end
+

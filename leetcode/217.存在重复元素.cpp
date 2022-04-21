@@ -1,14 +1,10 @@
-//
-// Created by Administrator on 2022/3/25.
-//
+/*
+ * @lc app=leetcode.cn id=217 lang=cpp
+ *
+ * [217] 存在重复元素
+ */
 
-#ifndef CPP__10_H
-#define CPP__10_H
-#include <iostream>
-#include <algorithm>
-#include<vector>
-using namespace std;
-#endif //CPP__10_H
+// @lc code=start
 class Solution {
 
 public:
@@ -24,3 +20,5 @@ public:
         if(nums.size()==1) return false;else return true;
     }
 };
+// @lc code=end
+
