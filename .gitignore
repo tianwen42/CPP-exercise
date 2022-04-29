@@ -8,6 +8,16 @@
 # clion配置
 # User-specific stuff
 .idea/
+.vs/
+.vscode/
 build/
 cmake-build-debug-mingw/
 cmake-build-debug/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Files #
+*.exe
