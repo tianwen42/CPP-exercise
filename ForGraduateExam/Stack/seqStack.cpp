@@ -8,6 +8,7 @@ typedef struct {
   int top;
 } seqStack;
 
+//初始化
 void Initstack(seqStack &st) { st.top = -1; }
 
 int getTop(seqStack &st) {
@@ -43,6 +44,9 @@ int pop(seqStack &st) {
   }
 }
 
+int getLength(seqStack st) { return st.top + 1; }
+
+// 打印链表
 void print(seqStack st) {
   if (st.top == -1) {
     printf("stack is Null");
@@ -62,29 +66,40 @@ int main() {
   printf("Top:%d  ", S.top);
   printf("isEmpty:%d    ", isEmpty(S));
   print(S);
+
+  // INSERT
   printf("\n插入: ");
   insert(S, 9);
-  // insert(S, 8);
-  // insert(S, 7);
-  // insert(S, 6);
-  // insert(S, 5);
+  insert(S, 8);
+  insert(S, 7);
+  insert(S, 6);
+  insert(S, 5);
   printf("Top:%d  ", S.top);
   printf("isEmpty:%d    ", isEmpty(S));
+  printf("长度%d\t  ", getLength(S));
   print(S);
 
+  // POP
   printf("\n");
   printf("POP:  ");
   printf("Top:%d  ", S.top);
   printf("isEmpty:%d    ", isEmpty(S));
   pop(S);
+  printf("长度%d\t  ", getLength(S));
   print(S);
 
+  /// getTop
   printf("\n");
   printf("getTop:");
   printf("Top:%d  ", S.top);
   printf("isEmpty:%d    ", isEmpty(S));
-  printf("%d    ", getTop(S));
+  printf("getTop:%d    ", getTop(S));
+
+  // getLength
+  printf("长度%d\t  ", getLength(S));
   print(S);
+
+  //
 
   return 0;
 }
