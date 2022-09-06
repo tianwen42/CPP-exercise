@@ -1,13 +1,11 @@
 //
 // Created by Administrator on 2022/2/27.
 //
-#include <iostream>
-#include "_11.h"
+#include<iostream>
+using namespace std;
 
 int main() {
-    using namespace std;
-    Solution example = Solution();
-    // cout<<example.reverse2(-150) << endl;
-
-
+     cout<<"hello"<<endl;
+     cout<<121<<"hello"<<endl;
+     cout<<122<<"hello"<<endl;
 }
