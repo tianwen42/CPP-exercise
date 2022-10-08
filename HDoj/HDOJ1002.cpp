@@ -1,12 +1,4 @@
-// Problem Description
-// I have a very simple problem for you. Given two integers A and B, your job is to calculate the Sum of A + B.
-
-// Input
-// The first line of the input contains an integer T(1<=T<=20) which means the number of test cases. Then T lines follow, each line consists of two positive integers, A and B. Notice that the integers are very large, that means you should not process them by using 32-bit integer. You may assume the length of each integer will not exceed 1000.
-
-// Output
-// For each test case, you should output two lines. The first line is "Case #:", # means the number of the test case. The second line is the an equation "A + B = Sum", Sum means the result of A + B. Note there are some spaces int the equation. Output a blank line between two test cases.
-
+// 大数相加
 // Sample Input
 // 2
 // 1 2
@@ -23,12 +15,21 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    int n, sum;
-    sum = 0;
-    while (cin >> n) {
-        sum = (1 + n) * (double)(n / 2.00);
-        cout << sum << endl
-             << endl;
+    int a, b;
+    int counter, times;
+    cin >> times;
+    for (counter = 1; counter <= times; counter++) {
+        //输入两个数字并求和
+        cin >> a >> b;
+
+        cout << "Case " << counter << ':' << endl;
+        cout << a << " + " << b << " = " << Add(a, b) << endl;
+
+        if (counter != times) {
+            cout << endl;
+        }
     }
     return 0;
 }
+
+char *Add(int a, int b) { char *result = ""; }
