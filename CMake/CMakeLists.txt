@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(cmake_learning)
-add_subdirectory(part1)
-add_subdirectory(part2)
+add_subdirectory(lesson1_1)
+add_subdirectory(lesson1_2)
+add_subdirectory(lesson2_1)
+add_subdirectory(lesson2_2)

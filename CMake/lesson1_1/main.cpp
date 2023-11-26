@@ -5,6 +5,6 @@ int main()
 {
 
     int c = add(1, 2);
-    std::cout << "part1: "<<c << std::endl;
+    std::cout << "lesson1_1: " << c << std::endl;
     return 0;
 }
