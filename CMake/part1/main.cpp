@@ -1,7 +1,10 @@
-#include <stdio.h>
+#include "add.h"
+#include <iostream>
 
 int main()
 {
-    printf("Hallo World");
+
+    int c = add(1, 2);
+    std::cout << "part1: "<<c << std::endl;
     return 0;
 }
