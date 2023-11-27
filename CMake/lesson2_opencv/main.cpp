@@ -9,6 +9,8 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
+
+    std::cout << "Running" << std::endl;
     // Read the image file
     Mat image = imread("C:/Users/Administrator/Pictures/Saved Pictures/1.jpg");
 
