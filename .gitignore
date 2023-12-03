@@ -7,10 +7,8 @@
 
 # clion配置
 # User-specific stuff
-.idea/
-.vs/
-.vscode/
 build/
+dist/
 cmake-build-debug-mingw/
 cmake-build-debug/
 
@@ -21,3 +19,8 @@ cmake-build-debug/
 
 # Files #
 *.exe
+
+# Config #
+.idea/
+.vs/
+.vscode/
