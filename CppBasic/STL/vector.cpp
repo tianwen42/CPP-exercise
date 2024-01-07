@@ -115,11 +115,31 @@ void test5() {
          << endl;
 }
 
+void test6() {
+    cout << "test6-------当申请了一片内存过大之后,如何缩小这片内存?" << endl;
+    // 当申请了一片内存过大之后,如何缩小这片内存? 通过匿名对象拷贝构造交换
+    vector<int> v1;
+    v1.reserve(1000);
+    v1.push_back(100);
+    v1.push_back(200);
+    v1.push_back(300);
+    v1.push_back(400);
+    cout << "v1(1000)-size: " << v1.size() << " capacity:" << v1.capacity()
+         << endl;
+    vector<int>(v1).swap(v1);
+    // 申请匿名对象（拷贝v1） Oject-size-4
+    // 交换v1和匿名对象
+    // 匿名对象在周期之后回收掉
+    // ps：通过匿名对象拷贝构造只拷贝有数据的区域
+    cout << "v1-size: " << v1.size() << " capacity:" << v1.capacity() << endl;
+}
+
 int main() {
     test1();
     test2();
     test3();
     test4();
     test5();
+    test6();
     return 0;
 }
