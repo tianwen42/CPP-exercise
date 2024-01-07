@@ -5,35 +5,33 @@
 #ifndef CPP_VIRTUALFUCTION_H
 #define CPP_VIRTUALFUCTION_H
 
-#endif // CPP_VIRTUALFUCTION_H
+#endif  // CPP_VIRTUALFUCTION_H
 
 #include <iostream>
 
 using namespace std;
 
-class A
-{ //虚函数示例代码2
-public:
+class A {  // 虚函数示例代码2
+   public:
     virtual void fun() { cout << "A::fun" << endl; }
 
     virtual void fun2() { cout << "A::fun2" << endl; }
 };
 
-class B : public A
-{
-public:
+class B : public A {
+   public:
     void fun() { cout << "B::fun" << endl; }
 
     void fun2() { cout << "B::fun2" << endl; }
-}; // end//虚函数示例代码2
+};  // end//虚函数示例代码2
 
-static int virtualfun()
-{
-    void (A::*fun)(); //定义一个函数指针
-    A *p = new B;
+static int virtualfun() {
+    void (A::*fun)();  // 定义一个函数指针
+    A* p = new B;
     fun = &A::fun;
 
-    cout << "A *p = new B " << endl; //函数指针指向了B,根据对象类型调用，虚函数作用在于重载继承类的函数
+    cout << "A *p = new B " << endl;
+    // 函数指针指向了B,根据对象类型调用，虚函数作用在于重载继承类的函数
     cout << "(p->*fun)();" << endl;
     (p->*fun)();
 
@@ -45,8 +43,12 @@ static int virtualfun()
     return 0;
 }
 
-int main()
-{
+void test1() {
+    int i = 0;
+}
+
+int main() {
     virtualfun();
+    test1();
     return 0;
 }

@@ -6,8 +6,7 @@
 #include <map>
 using namespace std;
 
-static void ShiftOperators()
-{
+static void ShiftOperators() {
     map<int, int> m;
     for (int i = 0; i < 7; i++) {
         m[i] = i;
@@ -16,8 +15,7 @@ static void ShiftOperators()
     cout << m.size() << endl;
 }
 
-int main()
-{
+int main() {
     ShiftOperators();
     return 0;
 }

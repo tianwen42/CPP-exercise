@@ -1,42 +1,38 @@
 #include <iostream>
 using namespace std;
+// 内存对齐问题
 
-class CBase1
-{
-};
+class CBase1 {};
 // 32-bit: sizeof(CBase)=1；
 // 64-bit: sizeof(CBase)=1；
 
-class CBase2
-{
-    int a;  // 4
-    char p; // 1
+class CBase2 {
+    int a;   // 4
+    char p;  // 1
 };
 // 内存对齐
 // 32-bit: sizeof(CBase)=8；
 // 64-bit: sizeof(CBase)=8；
 
-class CBase3
-{
-public:
+class CBase3 {
+   public:
     CBase3(void){};
     virtual ~CBase3(void){};
 
-private:
+   private:
     int a;
-    char *p;
+    char* p;
 };
 // 32-bit: sizeof(CBase)=12；4+4+4 [a+p+~]
 // 64-bit: sizeof(CBase)=24；4(8)+8+8 [a+p+~] 内存对齐
 
-class CChild : public CBase3
-{
-public:
+class CChild : public CBase3 {
+   public:
     CChild(void){};
     ~CChild(void){};
     virtual void test(){};
 
-private:
+   private:
     int b;
 };
 // 4 子类成员变量
@@ -44,8 +40,7 @@ private:
 // 32-bit: sizeof(CChild)=16；
 // 64-bit: sizeof(CChild)=32；
 
-int main()
-{
+int main() {
     int i = 1;
     CBase1 A;
     CBase2 B;

@@ -6,23 +6,21 @@
 #ifndef CPP_OPERATOR_H
 #define CPP_OPERATOR_H
 #include <iostream>
-#endif // CPP_OPERATOR_H
+#endif  // CPP_OPERATOR_H
 using namespace std;
 
-static void ShiftOperators()
-{
-    //移位运算
+static void ShiftOperators() {
+    // 移位运算
     cout << "num=4" << endl;
     int n = 4 << 2;
     // 左乘
     cout << "4<<2: " << n << endl;
     int m = 4 >> 2;
-    //右除
+    // 右除
     cout << "4>>2: " << m << endl;
 }
 
-int main()
-{
+int main() {
     ShiftOperators();
     return 0;
 }

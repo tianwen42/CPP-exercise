@@ -4,9 +4,8 @@ typedef struct point {
     int y;
 } a;
 
-int main()
-{
-    a p1; // 宏定义别名
+int main() {
+    a p1;  // 宏定义别名
     point p2;
     p1.x = 3;
     p1.y = 4;

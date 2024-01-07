@@ -3,7 +3,8 @@
 #include <iostream>
 #define _STR0(x) #x
 #define _STR(x) _STR0(x)
-#define _MAGIC0(name, val, size) _magic_print((name), (const uint8_t *)(val), (size))
+#define _MAGIC0(name, val, size) \
+    _magic_print((name), (const uint8_t*)(val), (size))
 #define MAGIC(v) _MAGIC0(_STR(v), (&v), sizeof(v));
 #define MAGIC_R(v)                          \
     ({                                      \
@@ -11,11 +12,11 @@
         _MAGIC0(_STR(v), (&_v), sizeof(v)); \
     });
 #define MAGIC_SIZED(v, size) _MAGIC0(_STR(v), (&v), (size));
-#define MAGIC_PTR(v) fprintf(stderr, "%s: %p\n", _STR(v), (void *)(v));
+#define MAGIC_PTR(v) fprintf(stderr, "%s: %p\n", _STR(v), (void*)(v));
 
-static void _magic_print(const char *name, const uint8_t *ptr, size_t size)
-{
-    fprintf(stderr, "=====\n%s: %zu (%#zx) byte%s", name, size, size, ("s") + (size == 1));
+static void _magic_print(const char* name, const uint8_t* ptr, size_t size) {
+    fprintf(stderr, "=====\n%s: %zu (%#zx) byte%s", name, size, size,
+            ("s") + (size == 1));
     for (size_t i = 0; i < size; i++) {
         if (i % 16 == 0)
             fprintf(stderr, "\n%0*zx ", 4, i);
@@ -34,15 +35,9 @@ union un_t {
     double d;
 };
 
-enum en_t {
-    ENA,
-    ENB,
-    ENC = 114514
-};
+enum en_t { ENA, ENB, ENC = 114514 };
 
-int main()
-{
-
+int main() {
     struct point p = {1234, -5678};
     MAGIC(p);
 
