@@ -1,10 +1,8 @@
-#include "add.h"
 #include <iostream>
+#include "add.h"
 
-
-int main()
-{
+int main() {
     int c = add(1, 2);
-    std::cout << c << std::endl;
+    std::cout << "lesson1_2: " << c << std::endl;
     return 0;
 }

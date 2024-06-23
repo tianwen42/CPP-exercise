@@ -43,12 +43,16 @@ void test2() {
         cout << &v1[i] << " " << v1[i] << endl;
     }
     // 迭代器遍历
-    for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++) {
-        cout << &it << " " << *it << endl;
+    for (vector<int>::iterator ite = v1.begin(); ite != v1.end(); ++ite) {
+        cout << &ite << " 迭代器遍历" << *ite << endl;
+    }
+    //C++11特性
+    for (int i:{10,20,30}) {
+        cout << &i << " C++11特性遍历" << i << endl;
     }
     // auto遍历
     for (auto iter = v1.begin(); iter != v1.end(); iter++) {
-        cout << &iter << " " << *iter << endl;
+        cout << &iter << " 自动类型推导" << *iter << endl;   
     }
     // C++11,auto关键字的另一种方式
     for (auto i : v1) {
