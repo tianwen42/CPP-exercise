@@ -6,14 +6,14 @@
 #define CPP__1_H
 
 #endif //CPP__1_H
-
+#include<iostream>
 
 class Solution {
 public:
     int digitalSection(int x) {
         //数字按逆序遍历
         using namespace std;
-        cout << x << endl;
+        std::cout << x << std::endl;
         while (x != 0) {
             cout << "x%10取最末位: " << x % 10 << "  ";
             cout << "x/10去除末位: " << x / 10 << endl;
