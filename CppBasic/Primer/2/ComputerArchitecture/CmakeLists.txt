@@ -1,0 +1,7 @@
+project(project)
+cmake_minimum_required(VERSION 3.15)
+add_executable(BigAndLittleEndian BigAndLittleEndian.cpp)
+add_executable(LvalueAndRvalue LvalueAndRvalue.cpp)
+add_executable(VarLifetime VarLifetime.cpp)
+add_executable(MemoryOfStruct MemoryOfStruct.cpp)
+

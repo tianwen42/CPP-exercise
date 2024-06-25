@@ -10,10 +10,10 @@
 int globalVariable = 10;  // 全局变量，静态存储期
 
 int Function() {
-    static int staticVariable =
-        5;  // 静态变量，存储在静态存储区，其生存期为整个程序的执行期间
-    int automaticVariable =
-        3;  // 自动存储期（automatic），存储在栈上，其生存期为函数执行期间
+    static int staticVariable = 5;
+    // 静态变量，存储在静态存储区，其生存期为整个程序的执行期间
+    int automaticVariable = 3;
+    // 自动存储期（automatic），存储在栈上，其生存期为函数执行期间
 
     std::cout << "staticVariable: " << staticVariable << std::endl;
     std::cout << "automaticVariable: " << automaticVariable << std::endl;

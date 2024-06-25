@@ -1,5 +1,9 @@
 #include <iostream>
 
+std::string getName() {
+    return "John";
+}
+
 int main() {
     int x = 5;      // x 是左值
     int y = x + 3;  // x + 3 是右值
@@ -8,11 +12,12 @@ int main() {
     array[1] = 10;  // array[1] 是左值
 
     // 函数调用返回的临时值是右值
-    std::string getName() {
-        return "John";
-    }
+
+    std::string getName();
 
     std::string name = getName();  // getName() 是右值
+
+    std::cout << name << std::endl;
 
     int* ptr = &x;  // &x 是右值，但 ptr 是左值
     *ptr = 7;       // *ptr 是左值
@@ -28,4 +33,5 @@ int main() {
     // const char *pc = "Good morning my neighbors";
     // pc 是可修改的左值
     // *pc 是不可修改的左值
+    return 0;
 }

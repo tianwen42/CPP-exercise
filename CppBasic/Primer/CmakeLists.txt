@@ -1,0 +1,7 @@
+project(project)
+cmake_minimum_required(VERSION 3.15)
+add_subdirectory(./MemoryOfStruct)
+add_subdirectory(./Operator)
+# add_subdirectory(./MemoryOfStruct)
+# add_subdirectory(./MemoryOfStruct)
+# add_subdirectory(./MemoryOfStruct)

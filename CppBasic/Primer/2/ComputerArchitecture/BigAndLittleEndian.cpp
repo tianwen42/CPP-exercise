@@ -29,24 +29,32 @@ int main() {
     // 大小端问题
     int i = 0x20231203;
     MAGIC(i);
-    MAGIC_R(0x20231203);  // 03 12 23 20 小端序(X86,AMD64,ARM)     20 23 12
-                          // 03大端序(linux)
+    MAGIC_R(0x20231203);
+    // 4bytes | 03 12 23 20 小端序(X86,AMD64,ARM) | 20 23 12 03 大端序(linux)
 
     long long ll = 0xfedcba9876543210LL;
     MAGIC(ll);
+    // 8bytes  | 10 32 54 76 98 ba dc fe 小端序(X86,AMD64,ARM)
 
-    double d = 3.14159265358979323;  // 0x400921fb54442d18
+    double d = 3.14159265358979323;
     MAGIC(d);
+    // 8bytes I:0x400921fb54442d18 | 18 2d 44 54 fb 21 09 40
 
-    float f = d;  // 0x40490FDB
+    float f = d;
     MAGIC(f);
+    // 4bytes 0x40490FDB | db 0f 49 40
 
-    char c = 'A';  // ASCII=65 0x0041
+    char c = 'A';
     MAGIC(c);
+    // 1bytes ASCII=65 0x0041 | 41
 
     MAGIC_R('A');
+    // 1bytes ASCII=65 0x0041 | 41
 
-    MAGIC_R((short)ll);  // 0x3210
+    MAGIC_R((short)ll);
+    // 8bytes 10 32 54 76 98 ba dc fe
+    // 8bytes->2bytes
+    // 0x3210 | 10 32
 
     MAGIC(
         "Hello world! I am a l"
