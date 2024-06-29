@@ -1,4 +1,4 @@
-# CPP Basic Question
+# CPP Basic
 
 ## Q1_1 一个成员变量的大小
 - 基本数据类型
